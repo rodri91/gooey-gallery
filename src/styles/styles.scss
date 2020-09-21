@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap');
 
 :root {
   --color-text1: #d6d0b8;
@@ -34,6 +34,15 @@ body {
   pointer-events: none;
   transition: color ease .9s;
 }
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  background: linear-gradient(-15deg, black, transparent);
+  z-index: 2;
+  opacity: .35;
+}
 .container {
   position: fixed;
 	display: flex;
@@ -60,6 +69,7 @@ body {
       bottom: 60px;
       font-family: 'Lora', serif;
       font-size: calc(1.8vw + 1rem);
+      font-weight: 400;
       pointer-events: none;
     }
 
