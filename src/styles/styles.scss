@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
+
+:root {
+  --color-text1: #d6d0b8;
+  --color-text2: #ad768b;
+  --color-text3: #b9e6e3;
+
+  --color-bg1: #635e4d;
+  --color-bg2: #693a4c;
+  --color-bg3: #2b3f44;
+
+  --color-text: var(--color-text1);
+  --color-bg: var(--color-bg1);
+  --color-link: var(--color-text);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-bg);
+  transition: background-color ease .9s;
+}
+.title {
+  position: absolute;
+  top: 3vh;
+  left: 2vw;
+  width: 70%;
+  margin: 0;
+  font-family: 'Lora', serif;
+  font-size: calc(2vw + 6rem);
+  line-height: 1;
+  color: var(--color-text);
+  z-index: 1;
+  pointer-events: none;
+  transition: color ease .9s;
+}
+.container {
+  position: fixed;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-around;
+	width: 100%;
+	height: 100vh;
+  z-index: 3;
+  
+  .tile {
+    position: relative;
+    width: 27vw;
+    flex: 0 0 auto;
+
+    &__image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    &__copy {
+      position: absolute;
+      bottom: 60px;
+      font-family: 'Lora', serif;
+      font-size: calc(1.8vw + 1rem);
+      pointer-events: none;
+    }
+
+    &.tile-1 {
+      margin-bottom: 10vh;
+
+      .tile__copy {
+        color: #d6d0b8;
+      }
+    }
+
+    &.tile-2 {
+      margin-bottom: 15vh;
+
+      .tile__copy {
+        color: #ad768b;
+        
+      }
+    }
+    
+    &.tile-3 {
+      margin-bottom: 4vh;
+
+      .tile__copy {
+        color: #c6d6cd;
+      }
+    }
+  }
+}
+
+canvas {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	z-index: 2;
+}
