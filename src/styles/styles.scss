@@ -108,3 +108,14 @@ canvas {
 	height: 100vh;
 	z-index: 2;
 }
+
+.attribution {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-family: monospace;
+  font-size: .8em;
+  text-transform: uppercase;
+  color: #fff;
+  opacity: .5;
+}
