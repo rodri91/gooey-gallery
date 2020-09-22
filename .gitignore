@@ -1,7 +1,7 @@
 .cache/
 coverage/
-dist/*
-!dist/index.html
+build/*
+!build/index.html
 node_modules/
 *.log
 
